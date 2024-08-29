@@ -16,3 +16,6 @@
 * #### HTTP 기본 지식
   * [HTTP 기본](/HTTP/everyhttp.md)
   * [클라이언트-서버 구조](/HTTP/client-server.md)
+  * [Stateful, Stateless](/HTTP/stateless.md)
+  * [비 연결성(connectionless)](/HTTP/connectionless.md)
+  * [HTTP 메시지](/HTTP/message.md)
