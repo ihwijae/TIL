@@ -50,15 +50,15 @@
 #### 상태유지
 - 중간에 다른 점원으로 바뀌면 안된다. (서버가 바뀌면 안된다)
 - 중간에 다른 점원으로 바뀐다면 상태 정보를 미리 다른 점원에게 알려줘야 한다.
-- ![image](/images/http/stateful.png)
-- ![image](/images/http/statefulerror.png)
+- ![image](/HTTP/images/stateful.png)
+- ![image](/HTTP/images/statefulerror.png)
 #### 무상태
 - 중간에 다른 점원으로 바뀌어도 된다. (서버가 바뀌어도 된다)
 - 갑자기 고객(클라이언트)가 증가해도 점원을 대거 투입할 수 있다 (서버를 늘릴 수 있다고 생각하자)
 - 갑자기 클라이언트 요청이 증가해도 서버를 대거 투입해서 대처할 수 있다.
 - 무상태는 응답 서버를 쉽게 바꿀수 있다 (무한한 서버 증설가능)
-- ![image](/images/http/stateless.png)
-- ![image](/images/http/statelesserror.png)
+- ![image](/HTTP/images/stateless.png)
+- ![image](/HTTP/images/statelesserror.png)
 - `무상태의 단점이라고 한다면 클이언트가 요청할때 필요한 데이터를 보내기 때문에 요청 데이터의 양이 많아진다`
 
 #### Stateless 실무 한계

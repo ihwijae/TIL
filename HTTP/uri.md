@@ -6,7 +6,7 @@
 `URL(Uniform Resource Locator) : 리소스의 위치`
 `URN(Uniform Resource Name) : 리소스의 이름`
 
-![image](/images/http/uri.png)
+![image](/HTTP/images/uri.png)
 보통 URL을 주로 사용한다.
 
 ## URI 단어 뜻

@@ -19,3 +19,8 @@
   * [Stateful, Stateless](/HTTP/stateless.md)
   * [비 연결성(connectionless)](/HTTP/connectionless.md)
   * [HTTP 메시지](/HTTP/message.md)
+
+* #### HTTP 메서드
+  * [HTTP API 예시](/HTTP/httpapi.md)
+  * [GET, POST](/HTTP/getpost.md)
+  * [PUT, PATCH, DELETE](/HTTP/put-path-delete.md)

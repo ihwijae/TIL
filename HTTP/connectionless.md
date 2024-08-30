@@ -2,11 +2,11 @@
 `TCP/IP의 경우에는 기본적으로 연결을 유지한다`
 
 ### 연결을 유지하는 모델
-![image](/images/http/connection.png)
+![image](/HTTP/images/connection.png)
 - 클라이언트1, 2이 놀고 있어도 서버는 계속 연결을 유지 해야하는 단점이 있다
 
 ### 연결을 유지하지 않는 모델
-![image](/images/http/connectionless.png)
+![image](/HTTP/images/connectionless.png)
 - 클라이언트1이 서버와 요청, 응답이 끝났으면 연결을 종료한다.
 - 클라이언트2, 3도 마찬가지로 요청, 응답이 끝났으면 연결을 종료한다.
 - 현재 요청을 주고 받을 때만 연결을 하기 때문에 서버의 자원을 줄일 수 있다.
@@ -29,7 +29,7 @@
 - html파일 외에 css ,js등 각종 리소스들을 보내야되기때문에 일정시간동안 약 30초동안은 tcp/ip연결을 끊지않고 대기한다.
 - 추가로 마지막 데이터를 전송하고 나서 보통 10초 정도 연결을 유지한다.
   - 번외로 HTTP 초기에는 연결하고 HTML요청/응답하고 종료하고  CSS 따로, JS 따로 이런식이라 매우 비효율적이였음
-![image](/images/http/persistent.png)
+![image](/HTTP/images/persistent.png)
 
 
 `개발할땐 최대한 Stateless를 기억하고 개발해야 한다 `

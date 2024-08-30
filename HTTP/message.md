@@ -1,6 +1,6 @@
 # HTTP 메시지
 
-![image](/images/http/message.png)
+![image](/HTTP/images/message.png)
 
 ## 요청 메시지 시작라인
 - start-line =  `request-line(요청메시지)` / status-line(응답메시지)
