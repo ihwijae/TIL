@@ -9,16 +9,23 @@
 ![image](/HTTP/images/uri.png)
 보통 URL을 주로 사용한다.
 
+
+<br>
+
 ## URI 단어 뜻
 * Uniform : 리소르를 식별하는 통일된 방식
 * Resource : 자원, URI로 식별할 수 있는 모든것(제한없음)
 * Identifier : 다른 항목과 구분하는데 필요한 정보 (사람을 식별한다고하면, 주민번호로 식별한다 치면 주민번호가 Identifier)
+
+<br>
 
 ## URL, URN 뜻
 * URL - Locator: 리소스가 있는 위치를 지정
 * URN - Name : 리소스에 이름을 부여
 * 위치는 변할 수 있지만 이름은 변하지 않는다.
 * URN 이름 만으로 실제 리소르를 찾는 방법은 보편화 되지 않음
+
+<br>
 
 
 ## URL을 분석해보자

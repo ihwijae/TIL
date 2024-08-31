@@ -16,6 +16,9 @@ URI(Uniform Resource Identifier)
 
  HTTP API를 설계할 때 가장 중요한 포인트는 `리소스 식별` 이다
 
+
+<br>
+
 ## 리소스의 의미
 - 회원을 등록하고 수정하는게 리소스가 아니다
   - 예) 미네랄클 캐라 -> 미네랄이 리소스
@@ -24,6 +27,8 @@ URI(Uniform Resource Identifier)
   - 회원을 등록하고 수정하는 조회하는 것을 모두 배제
   - 회원이라는 리소스만 식별하면 된다. -> 회원 리소스를 URI에 매핑
 
+<br>
+
 ## API URI 설계
 - `회원` 목록 조회 /members
 - `회원` 조회 /members/{id} -> 어떻게 구분하지?
@@ -31,6 +36,8 @@ URI(Uniform Resource Identifier)
 - `회원` 수정 /members/{id} -> 어떻게 구분하지?
 - `회원` 삭제 /members/{id} -> 어떻게 구분하지?
 - 참고: 계층 구조상 상위를 컬렉션으로 보고 복수단어 사용권장(member -> members)
+
+<br>
 
 
 ## 리소스와 행위를 분리

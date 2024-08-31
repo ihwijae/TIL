@@ -17,6 +17,8 @@
     "age": 20
 }
 ```
+<br>
+
 ```angular2html
 PUT /members/100 리소스에 PUT 요청
 
@@ -28,6 +30,9 @@ Context-Type: application/json
     "age": 50
 }
 ```
+
+<br>
+
 기존 리소스가 이미 있으니 새로운 리로스로 대체 된다.
 ```angular2html
 /members/100 리소스
@@ -36,6 +41,8 @@ Context-Type: application/json
     "age": 50
 }
 ```
+
+<br>
 
 `리소스가 없는 경우 예시`
 ```angular2html
@@ -49,6 +56,9 @@ Context-Type: application/json
     "age": 50
 }
 ```
+
+<br>
+
 ```angular2html
 /members/100 리소스
 {
@@ -56,6 +66,8 @@ Context-Type: application/json
 "age": 50
 }
 ```
+
+<br>
 
 `주의할 점: 리소스를 완전히 대체한다`
 ```angular2html
@@ -65,6 +77,10 @@ Context-Type: application/json
 "age": 50
 {
 ```
+
+<br>
+
+
 ```angular2html
 PUT /members/100 HTTP/1.1
 Context-Type: application/json
@@ -73,6 +89,9 @@ Context-Type: application/json
     "age": 50
 }
 ```
+
+<br>
+
 ```angular2html
 /members/100 리소스 대체
 
@@ -81,9 +100,13 @@ Context-Type: application/json
 }
 ```
 
+<br>
+
 기존 리소스를 완전히 대체해서 username 필드가 삭제됨
 
 부분수정을 하려면 PATCH 메서드를 사용하면 된다
+
+<br>
 
 ## PATCH
 - 리소스 부분 변경
@@ -97,6 +120,8 @@ Context-Type: application/json
 }
 ```
 
+<br>
+
 ```angular2html
 /members/100 PATHCH 요청
 
@@ -107,6 +132,9 @@ Context-Type: application/json
     "age": 50
 }
 ```
+
+<br>
+
 ```angular2html
 /members/100 수정된 리소스
 
@@ -116,6 +144,8 @@ Context-Type: application/json
 }
 ```
 부분적으로 age 필드만 50으로 변경됐다
+
+<br>
 
 
 ## DELETE
