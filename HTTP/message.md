@@ -7,18 +7,18 @@
 - `request-line` = method SP(공백.스페이스바) request-target SP HTTP-version CRLF(엔터)
 
 
-#### 요청 메시지 시작라인 - HTTP 메서드
+## 요청 메시지 시작라인 - HTTP 메서드
 - 종류 : GET, POST, PUT, DELETE ...
 - 서버가 수행해야 할 동작 지정
   - GET : 리소스 조회
   - POST : 요청 내역 처리(등록을 많이 씀)
 
-#### 요청 메시지 시작라인 - 요청 대상 (/search?p=hello&hl=ko)
+## 요청 메시지 시작라인 - 요청 대상 (/search?p=hello&hl=ko)
 - absolute-path[?query] (절대경로[?query])
 - 절대경로= "/" 로 시작하는 경로
 - 참고: *, http://...?x=y 와 같이 다른 유형의 경로지정 방법도 있다.
   
-#### 요청 메시지 시작라인 - HTTP 버전
+## 요청 메시지 시작라인 - HTTP 버전
 - HTTP version
 
 
@@ -31,6 +31,8 @@
     - 400 : 클라이언트 요청 오류
     - 500 : 서버 내부 오류
   - 이유 문구 : 사람이 이해할 수 있는 짧은 상태코드 설명 글
+  
+  <br>
 
 ## HTTP 헤더
 - header-field = field-name ":" OWS field-value OWS (OWS:띄어쓰기 허용)
@@ -44,6 +46,8 @@
 -  표준 헤더가 너무 많음
 -  필요시 임의의 헤더 추가 가능
 -  예 ) helloworld: hihi
+
+<br>
 
 ## HTTP 메시지 바디
 ### 용도

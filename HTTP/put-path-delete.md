@@ -1,6 +1,6 @@
 # HTTP 메서드 - PUT, PATCH, DELETE
 
-### PUT
+## PUT
 - 리소스를 대체 (PC에서 복사,붙여넣기를 생각하자 폴더에 파일이 없으면 생성되지만 있으면 지우고 새로운 파일로 덮어쓰기)
     - 리소스가 있으면 대체
     - 리소스가 없으면 생성
@@ -85,7 +85,7 @@ Context-Type: application/json
 
 부분수정을 하려면 PATCH 메서드를 사용하면 된다
 
-### PATCH
+## PATCH
 - 리소스 부분 변경
 
 ```angular2html
@@ -118,7 +118,7 @@ Context-Type: application/json
 부분적으로 age 필드만 50으로 변경됐다
 
 
-### DELETE
+## DELETE
 - 리소스 삭제
 ```angular2html
 DELETE /members/100 HTTP/1.1
