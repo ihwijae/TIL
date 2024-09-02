@@ -25,7 +25,7 @@
   - 회원 등록: /members -> `POST`
   - POST /members
 - 서버가 새로 등록된 리소스 URI를 생성해줌
-  -  HTTP/1.1 201 Created
+  -  HTTP/1.1 201 Created <br>
      Location: /members/100
 - 컬렉션(Collection)
   - 서버가 관리하는 리소스 디렉토리
@@ -122,3 +122,8 @@
   - 문서, 컬렉션, 스토어로 해결하기 어려운 추가 프로세스 실행
   - 동사를 직접 사용
   - 예) /members/{id}/delete
+
+
+> `가능한 최대한 리소스만 가지고 설계한다. 기능은 HTTP API로 설계한다` <br>
+> 즉, 문서, 컬렉션을 가지고 최대한 설계 한다. <br>
+>  애매한경우 컨트롤 URI 사용한다
