@@ -1,6 +1,6 @@
 # 상태 코드
 ### 클라이언트가 보낸 요청의 처리 결과를 응답에서 알려주는 기능
-- 1xx (informational): 요청이 수신되어 처리중
+- 1xx (informational): 요청이 수신되어 처리중 (거의 사용하지 않음)
 - 2xx (Successful): 요청 정상 처리
 - 3xx (Redirection): 요청을 완료 하려면 추가 행동 필요
 - 4xx (Client Error): 클라이언 오류, 잘못된 문법등으로 서버가 요청을 수행할 수 없음
