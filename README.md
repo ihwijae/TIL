@@ -31,3 +31,5 @@
 
 * #### HTTP 상태코드
   * [HTTP 상태코드 종류](./HTTP/status-code.md)
+  * [2xx - 성공](./HTTP/2xx.md)
+  * 
