@@ -1,6 +1,4 @@
-# HTTP 메서드 활용
-
-## 클라이언트에서 서버로 데이터 전송 `데이터 전달 방식은 크게 2가지`
+# 클라이언트에서 서버로 데이터 전송 `데이터 전달 방식은 크게 2가지`
 - 쿼리 파라미터를 통한 데이터 전송
   - GET
   - 주로 정렬 필터(검색어)
@@ -10,7 +8,7 @@
 
 <br>
   
-## 클라이언트에서 서버로 데이터전송 예시 4가지
+# 클라이언트에서 서버로 데이터전송 예시 4가지
 - 정적 데이터 조회
   - 이미지, 정적 텍스트 문서
 - 동적 데이터 조회
@@ -70,7 +68,7 @@ Host: localhost:8080
 
 <br>
 
-## HTML FORM 데이터 전송
+# HTML FORM 데이터 전송
 ### POST 전송-저장
 
 
@@ -176,6 +174,33 @@ multpart (여러 타입이 들어가는 것)
   - 파일 업로드 같은 바이너리 데이터 전송시 사용
   - 다른 종류의 여러 파일과 폼의 내용 함께 전송 가능(그래서 이름이 multipart)
 - 참고: HTML Form 전송은 GET, POST만 지원
+
+<br>
+
+# HTTP API 데이터 전송
+
+```angular2html
+POST /members HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "young"
+    "age": 20
+}
+```
+
+#### 정리
+- 서버 to 서버
+  - 백엔드 시스템 통신
+- 앱 클라이언트
+  - 안드로이드, IOS
+- 웹 클라이언트
+  - HTML 에서 Form전송 대신 자바 스크립트를 통한 통신에 사용(AJAX)
+  - 예) React, VueJs 같은 웹 클라이언트 API 통신
+- POST, PUT, PATCH: 메시지 바디를 통한 데이터 전송
+- GET: 조회, 쿼리 파라미터로 데이터 전달
+- Content-Type: application/json을 주로 사용 (사실상 표준)
+  - TEXT, XML, JSON 등등
 
 
 
