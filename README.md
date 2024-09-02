@@ -1,4 +1,4 @@
-## Study 📖
+## Today I Learned(TIL) 📖
 좋은 백엔드 개발자가 되기위한 저의 공부 기록입니다.
 
 
