@@ -25,4 +25,4 @@
   * [GET, POST](/HTTP/getpost.md)
   * [PUT, PATCH, DELETE](/HTTP/put-path-delete.md)
   * [HTTP 메서드 속성](/HTTP/attrib.md)
-  * [클라이언트 -> 서버 데이터 전송]
+  * [클라이언트 -> 서버 데이터 전송](/HTTP/submit.md) 
