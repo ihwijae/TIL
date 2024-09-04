@@ -34,3 +34,4 @@
   * [2xx - 성공](./HTTP/2xx.md)
   * [3xx-리다이렉트](./HTTP/3xx.md)
   * [4xx, 5xx 에러](./HTTP/4xx,5xx.md)
+  * [봉투 패턴](./HTTP/envelope-pattern.md)
