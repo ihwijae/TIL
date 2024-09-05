@@ -7,7 +7,7 @@
 
 <br>
 
-## HTTP 웹
+## HTTP
 * #### 네트워크
   * [IP 프로토콜 (인터넷 프로토콜)](./HTTP/ip-protocol.md)
   * [TCP & UDP](./HTTP/tcp-udp.md)
@@ -37,4 +37,11 @@
   * [봉투 패턴](./HTTP/envelope-pattern.md)
 
 * #### HTTP 헤더 - 일반 헤더
-* [HTTP 헤더 개요](./HTTP/http-header-v1.md)
+  * [HTTP 헤더 개요](./HTTP/http-header-v1.md)
+
+
+
+
+## JAVA
+* [Java의 포인터?](./java/point.md)
+* [Garbage Collection](./java/garbage-collection.md)
