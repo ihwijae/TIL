@@ -175,11 +175,11 @@ Young Generation의 공간은 Old Generation에 비해 상대적으로 작기 �
 1. 우리가 new 연산자를 써서 생성된 객체는 Young Generation 영역 Eden 영역에 할당
 2. 객체가 계속 생성되어 Eden 영역이 꽉차게 되고, Minor GC가 실행
 3. Mark 동작을 통해 reachable 객체를 탐색
-4. Eden 영역에서 살아남는 객체는 survivor1 영역으로 이동.
+4. Eden 영역에서 살아남는 객체는 `survivor1 영역으로 이동.`
 5. Eden 영역에서 사용되지 않는 객체의 메모리를 해제(Sweep)
 6. 살아남는 객체들은 age 값이 1씩 증가
 7. 또 다시 Eden 영역에 신규 객체들로 가득 차게 되면 다시 한번 minor GC 발생하고 Mark 한다
-8. mark 과정을 거쳐 살아남은 객체들을 비어있는 survivor2 영역으로 이동. `(survivor1, survivor2의 특징에서 둘 중 하나에는 꼭 비어 있어야 하는 규칙이 적용)`
+8. mark 과정을 거쳐 살아남은 객체들을 비어있는 `survivor2 영역으로 이동.` `(survivor1, survivor2의 특징에서 둘 중 하나에는 꼭 비어 있어야 하는 규칙이 적용 되므로 survivor1은 빈공간이 된다)`
 9. 다시 살아남은 객체들은 age 값이 1증가
 10. 이러한 과정을 반복한다
 
@@ -188,6 +188,10 @@ Young Generation의 공간은 Old Generation에 비해 상대적으로 작기 �
 - Old Generation 영역은 살아남는 객체들이 존재하는 공간이다.  
 - Old Generation의 객체들은 거슬러 올라가면 Young 영역에 의해 시작 되었지만, GC 과정중에 제거 되지 않은 경우 age 임계값이 차게되어 이동된 객체들이다.
 - 그리고 Major GC는 객체들이 계속 Promotion되어 Old 영역의 메모리가 부족해지면 발생한다.
+
+> [age 값이란?]Survivor 영역에서 객체의 객체가 살아남은 횟수를 의미하는 값이며,  
+> Object Header에 기록된다.만일 age 값이 임계값에 다다르면 Promotion(Old 영역으로 이동) 여부를 결정한다.JVM 중 가장 일반적인 HotSpot JVM의 경우 이 age의 기본 임계값은 31이다. 객체 헤더에 age를 기록하는 부분이 6 bit로 되어 있기 때문이다
+
 
 `Promotion 이란? 약 Minor GC가 계속해서 발생하게 되어 survivor 영역에 있는 Reachable Object들의 age가 일정 기준을 넘게 되면 앞으로 계속해서 사용될 수 있는 객체라고 판단하여 Old generation 영역으로 옮겨준다. 이 과정을 Promotion 이라고 한다`
 
