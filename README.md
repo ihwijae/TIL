@@ -53,4 +53,5 @@
 
 
 ## Nginx
-- [Nginx 리다이렉트](./nginx/default-conf.md)
+- [Nginx 리다이렉트 설정](./nginx/default-conf.md)
+- [Nginx 리다이렉트 흐름](./nginx/redirect.md)
