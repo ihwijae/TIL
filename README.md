@@ -41,8 +41,16 @@
   * [HTTP 표현 헤더](./HTTP/expression-header.md)
   * [HTTP 협상 헤더](./HTTP/Content-negotiation.md)
 
-
+<br>
 
 ## JAVA
 * [Java의 포인터?](./java/point.md)
 * [Garbage Collection](./java/garbage-collection.md)
+
+
+
+<br>
+
+
+## Nginx
+- [Nginx 리다이렉트](./nginx/default-conf.md)
