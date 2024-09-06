@@ -100,7 +100,7 @@ text/plain 으로 요청하면 text/plain이 매칭 된다.
 
 <br>
 
-우선순위 3
+## 우선순위 3
 #### Quality Values(q)
 
 - 구체적인 것을 기준으로 미디어 타입을 맞춘다.
