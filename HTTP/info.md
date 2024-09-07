@@ -93,7 +93,30 @@ Host: www.google.com
 `호스트를 먼저 찾고 그 안에서 포트로 구분한다고 이해하면 된다.`  
 `같은ip, 같은포트에 서로다른 도메인이 사용 가능하다 (단 http(80), https(443만)`  
 `해당 호스트로 요청이 오면 웹 서버에서 정의한 내용대로 맞는 어플리케이션 포트로 포트 포워딩 한다.`  
-`당연한 얘기지만 같은 포트로 여러 어플리케이션을 동시에 사용할 수는 없다`
+`당연한 얘기지만 같은 포트로 여러 어플리케이션을 동시에 사용할 수는 없다 도메인만 가능하다`
+
+nginx config 설정
+```
+server {
+    listen 80;
+    server_name example.com;
+
+    location / {
+        proxy_pass http://localhost:8080;
+    }
+}
+
+server {
+    listen 80;
+    server_name example.org;
+
+    location / {
+        proxy_pass http://localhost:8081;
+    }
+}
+```
+- example.com으로 오는 요청은 localhost:8080으로, example.org로 오는 요청은 localhost:8081으로 전달됩니다.  
+- 동일한 IP와 포트(80번)를 사용하지만, 도메인 이름에 따라 다른 서버 블록이 선택되어 처리되는 것이다.
 
 
 #### 여기서 Host필드가 없다면 생기는 문제.
