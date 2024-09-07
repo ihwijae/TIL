@@ -41,6 +41,7 @@
   * [HTTP 표현 헤더](./HTTP/expression-header.md)
   * [HTTP 협상 헤더](./HTTP/Content-negotiation.md)
   * [전송 방식](./HTTP/transmission.md)
+  * [일반 정보](./HTTP/)
 
 <br>
 
